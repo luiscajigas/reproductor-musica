@@ -433,4 +433,4 @@ class TrackListLC:
 def main(page: ft.Page):
     TrackListLC(page)
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER)
