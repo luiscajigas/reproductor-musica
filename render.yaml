@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: reproductor-musica
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: flet run --web app.py --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.6
